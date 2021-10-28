@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<script src="~/UiDesigne/amcharts4/core.js"></script>
+<script src="~/UiDesigne/amcharts4/charts.js"></script>
+<script src="~/UiDesigne/amcharts4/themes/animated.js"></script>
+
+
+
+@*<script src="~/Scripts/AmChartExample.js"></script>*@
+
+
+
+
+<style>
+    #chartdiv {
+        width: 100%;
+        height: 500px;
+    }
+</style>
+
+
+
+<!-- HTML -->
+<div id="chartdiv">
+    <img src="@Url.Action("Column")" alt="chart" />
+
+</div>
+<div id="chartdiv">
+    <img src="@Url.Action("BubbleBreak")" alt="chart" />
+</div>
+<div>
+    <img src="@Url.Action("Pie")" alt="chart" />
+
+</div>
