@@ -25,7 +25,7 @@ namespace AmchartMvc.Controllers
             result.ToList().ForEach(rs => xValue.Add(rs.CountryName));
             result.ToList().ForEach(rs => yValue.Add(rs.Papulation));
 
-            new Chart(width: 600, height: 400, theme: ChartTheme.Green)
+            new Chart(width: 600, height: 400, theme: ChartTheme.Vanilla)
                 .AddTitle("Chart For Growth [Coulum chart]")
                 .AddSeries("Default", chartType: "Pie", xValue: xValue, yValues: yValue)
                 .Write("bmp");
@@ -40,7 +40,7 @@ namespace AmchartMvc.Controllers
             result.ToList().ForEach(rs => xValue.Add(rs.CountryName));
             result.ToList().ForEach(rs => yValue.Add(rs.Papulation));
 
-            new Chart(width: 600, height: 400, theme: ChartTheme.Green)
+            new Chart(width: 600, height: 400, theme: ChartTheme.Vanilla)
                 .AddTitle("Chart For Growth [Coulum chart]")
                 .AddSeries("Default", chartType: "Column", xValue: xValue, yValues: yValue)
                 .Write("bmp");
@@ -55,7 +55,7 @@ namespace AmchartMvc.Controllers
             result.ToList().ForEach(rs => xValue.Add(rs.CountryName));
             result.ToList().ForEach(rs => yValue.Add(rs.Papulation));
 
-            new Chart(width: 600, height: 400, theme: ChartTheme.Green)
+            new Chart(width: 600, height: 400, theme: ChartTheme.Blue)
                 .AddTitle("Chart For Growth [BubbleBreak]")
                 .AddSeries("Default", chartType: "Candlestick", xValue: xValue, yValues: yValue)
                 .Write("bmp");
